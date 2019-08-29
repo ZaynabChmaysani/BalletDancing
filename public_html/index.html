@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel {
+            height: 400px;
+            /* background: #aaa; */
+        }
+ .carousel img {
+      height: 400px;
+ }
+ 
+        .text-primary {
+            font-weight: bold;
+            color: #ffffff !important;
+            animation: blinker 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+        }
+
+        @keyframes blinker {
+            from {
+                color: #0000FF;
+            }
+            to {
+                color: #ffffff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <img src="i.png" alt="i">
+        <h1>Ballet Dance Club</h1>
+
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Welcome!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Featuring</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Schedule</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div class="container" style="margin-top:0px">
+        <div class="row">
+            <div class="col-sm-5">
+
+                <h2>DANCE FOR LIFE!</h2>
+                <p>Join Us For Lebanon's Biggest Dance of the Year</p>
+                <div class="container">
+	                <div id="carousel" class="carousel slide" data-ride="carousel">
+	                    <!-- Indicators -->
+	                    <ol class="carousel-indicators">
+	                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+	                        <li data-target="#carousel" data-slide-to="1"></li>
+	                    </ol>
+
+	                    <!-- Wrapper for slides -->
+	                    <div class="carousel-inner">
+	                        <div class="carousel-item active">
+	                            <img src="fly.jpg" alt="" style="width:100%;">
+	                            <div class="carousel-caption">
+	                                <p>Serenity is our motto!</p>
+	                            </div>
+	                        </div>
+                            <div class="carousel-item">
+                                <img src="dance.jpg" alt="" style="width:100%;">
+                                <div class="carousel-caption">
+                                    <p>The body says what words cannot</p>
+                                </div>
+                            </div>
+	                    </div>
+
+	                    <!-- Left and right controls -->
+	                    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+	                </div>
+	            </div>
+
+                
+            </div>
+            <div class="col-sm-6">
+                <h2>TICKETS NOW AVAILABLE</h2>
+                <h4 class="text-primary">Starting at just 20$!</h4>
+
+                <ul class="list-group">
+
+                    <li class="list-group-item">You can get your ticket by phone at 01222334.</li>
+                    <li class="list-group-item">In person at the Auditorium Theatre Box Office</li>
+                    <li class="list-group-item">You can get it online by clicking <a class="btn " href="#https://www.virginmegastore.com.lb"><abbr title="World Health Organization">HERE</abbr></a></li>
+
+                </ul>
+
+                <br>
+                <br>
+                <br>
+                <h2>Who We Are?</h2>
+
+                <p>Ballet Dance Club is the annual benefit performance that showcases the city's unique diversity of talent,dance traditions,and styles.
+                    <br> One night at a year,the talented and renowed proffetional dancers of Lebanon come together to share the same stage at the art Auditorium-Theater. </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
